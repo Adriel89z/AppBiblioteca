@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Uniteca</string>
+    <string name="edit_ra">RA</string>
+    <string name="edit_senha">Senha</string>
+    <string name="login">login</string>
+    <string name="title_activity_uniteca">uniteca</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="inicio">inicio</string>
+    <string name="menu_acervo">Consulta de Acervo (fisico)</string>
+    <string name="menu_emprestimo">Empréstimo</string>
+    <string name="menu_reserva">Reserva</string>
+    <string name="menu_renovacao">Renovação</string>
+    <string name="menu_multa">Multa</string>
+    <string name="menu_carteirinha">Carteirinha</string>
+    <string name="menu_base_de_dados">Base de Dados</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="exemplo_emprestimo">O empréstimo de obras do acervo é um serviço que está disponível aos professores, funcionários e alunos com vínculo institucional ativo e que apresentem a carteirinha. Os usuários da comunidade externa somente poderão usufruir do empréstimo de obras para consulta na própria biblioteca.</string>
+    <string name="local"><b>1  Local: </b>As obras de consulta podem ser utilizadas localmente e devem ser emprestadas através do balcão de empréstimos, sendo devolvidas ao final da consulta, no mesmo dia.</string>
+    <string name="Domiciliar"><b>2  Empréstimo Domiciliar:</b> Permite ao usuário com vínculo ativo e identificado através da carteirinha o empréstimo domiciliar de obras do acervo de empréstimo domiciliar.</string>
+    <string name="D_1">Professores: Até 6 materiais por 15 dias corridos.</string>
+    <string name="D_2">Alunos e funcionários: Até 3 materiais por 7 dias corridos.</string>
+    <string name="O_referencia"><b>3  Obras de referência:</b> Não são emprestadas.</string>
+
+    <string name="R_1">A reserva de exemplares poderá ser realizada exclusivamente para materiais que estão com todos os exemplares emprestados, ou seja, quando não houver nenhum disponível.</string>
+    <string name="R_2">O item reservado permanecerá disponível para o usuário solicitante por um período de 24 horas a partir do ato de devolução, sendo respeitada a ordem da lista de espera.</string>
+    <string name="R_3">O usuário é informado pelo e-mail ou WhatsApp cadastrado.</string>
+    <string name="R_4"><b>É de responsabilidade do usuário em manter os dados cadastrais atualizados!</b></string>
+
+    <string name="renovacao_1">O usuário poderá realizar a renovação por até 3 vezes seguidas no balcão de atendimento da sua biblioteca.</string>
+
+    <string name="multa_1">O usuário que devolver o material informacional fora do prazo estipulado está sujeito a cobrança de multa por dia ou por hora, considerando finais de semana e feriados.</string>
+    <string name="multa_2">Valor é estipulado no edital de encargos da unidade.</string>
+    <string name="multa_3">Regulamento da biblioteca</string>
+
+    <string name="carteira_1">A carteirinha é um documento imprescindível para efetuar os empréstimos nas bibliotecas.</string>
+    <string name="carteira_2">Em caso de usuários com mais de uma matrícula ativa, o empréstimo só poderá ser efetuado na matrícula em que a carteirinha for apresentada.</string>
+    <string name="carteira_3">Não serão aceitas carteirinhas de modelos antigos, ilegível ou danificada. Em caso de troca de curso ou ciclo é necessário efetuar a troca da carteirinha.</string>
+    <string name="carteira_4">Todas as informações e a solicitação estão disponíveis no endereço, procurar a secretária do seu polo.</string>
+
+    <string name="acervo_1">Toque em qualquer área da tela para acessar o site do Acervo da Biblioteca.</string>
+
+    <string name="banco_dados_1">Toque em qualquer área da tela para acessar o site do Banco de Dados da Biblioteca.</string>
+</resources>

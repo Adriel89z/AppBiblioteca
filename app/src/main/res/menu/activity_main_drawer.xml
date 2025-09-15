@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/inicio"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/nav_acervo_fisico"
+            android:icon="@drawable/consulta_de_acervo"
+            android:title="@string/menu_acervo" />
+        <item
+            android:id="@+id/nav_emprestimo"
+            android:icon="@drawable/emprestimo"
+            android:title="@string/menu_emprestimo" />
+        <item
+            android:id="@+id/nav_reserva"
+            android:icon="@drawable/reserva"
+            android:title="@string/menu_reserva" />
+        <item
+            android:id="@+id/nav_renovacao"
+            android:icon="@drawable/renovacao"
+            android:title="@string/menu_renovacao" />
+        <item
+            android:id="@+id/nav_multa"
+            android:icon="@drawable/multa"
+            android:title="@string/menu_multa" />
+        <item
+            android:id="@+id/nav_carteirinha"
+            android:icon="@drawable/carteirinha"
+            android:title="@string/menu_carteirinha" />
+        <item
+            android:id="@+id/nav_base_de_dados"
+            android:icon="@drawable/base_de_dados"
+            android:title="@string/menu_base_de_dados" />
+
+    </group>
+</menu>

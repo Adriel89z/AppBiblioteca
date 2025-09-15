@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.projetobiblioteca.ui.inicio.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_acervo_fisico"
+        android:name="com.example.projetobiblioteca.ui.acervo.AcervoFragment"
+        android:label="@string/menu_acervo"
+        tools:layout="@layout/fragment_acervo" />
+
+    <fragment
+        android:id="@+id/nav_emprestimo"
+        android:name="com.example.projetobiblioteca.ui.emprestimo.EmprestimoFragment"
+        android:label="@string/menu_emprestimo"
+        tools:layout="@layout/fragment_emprestimo" />
+
+    <fragment
+        android:id="@+id/nav_reserva"
+        android:name="com.example.projetobiblioteca.ui.reserva.ReservaFragment"
+        android:label="@string/menu_reserva"
+        tools:layout="@layout/fragment_reserva" />
+
+    <fragment
+        android:id="@+id/nav_renovacao"
+        android:name="com.example.projetobiblioteca.ui.renovacao.RenovacaoFragment"
+        android:label="@string/menu_renovacao"
+        tools:layout="@layout/fragment_renovacao" />
+
+    <fragment
+        android:id="@+id/nav_multa"
+        android:name="com.example.projetobiblioteca.ui.multa.MultaFragment"
+        android:label="@string/menu_multa"
+        tools:layout="@layout/fragment_multa" />
+
+    <fragment
+        android:id="@+id/nav_carteirinha"
+        android:name="com.example.projetobiblioteca.ui.carteirinha.CarteirinhaFragment"
+        android:label="@string/menu_carteirinha"
+        tools:layout="@layout/fragment_carteirinha" />
+
+    <fragment
+        android:id="@+id/nav_base_de_dados"
+        android:name="com.example.projetobiblioteca.ui.base_dados.BaseDadosFragment"
+        android:label="@string/menu_base_de_dados"
+        tools:layout="@layout/fragment_base_dados" />
+
+
+</navigation>
