@@ -36,6 +36,18 @@
             android:id="@+id/nav_base_de_dados"
             android:icon="@drawable/base_de_dados"
             android:title="@string/menu_base_de_dados" />
-
     </group>
+
+    <!-- Grupo inferior -->
+    <group android:id="@+id/group_bottom" android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_suporte"
+            android:icon="@drawable/base_de_dados"
+            android:title="Suporte" />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/base_de_dados"
+            android:title="Sair" />
+    </group>
+
 </menu>

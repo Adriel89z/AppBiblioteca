@@ -1,9 +1,10 @@
 package com.example.projetobiblioteca;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -26,11 +27,11 @@ public class UnitecaActivity extends AppCompatActivity {
         // config da toolbar
         setSupportActionBar(binding.appBarUniteca.toolbar);
 
-        // Ainda pensando oq vou fazer aqui
+        /* Ainda pensando oq vou fazer aqui
         binding.appBarUniteca.fab.setOnClickListener(view -> {
             // Snackbar.make(view, "não sei oq vou fazer aqui, vamos com calmaaaaaaaaaaaa", Snackbar.LENGTH_SHORT).show();
             binding.appBarUniteca.fab.setVisibility(View.GONE);
-        });
+        }); */
 
         // Configuração do Drawer e NavigationView
         DrawerLayout drawerLayout = binding.drawerLayout;
@@ -45,24 +46,48 @@ public class UnitecaActivity extends AppCompatActivity {
                 R.id.nav_renovacao,
                 R.id.nav_multa,
                 R.id.nav_carteirinha,
-                R.id.nav_base_de_dados
+                R.id.nav_base_de_dados,
+                R.id.nav_suporte
         )
                 .setOpenableLayout(drawerLayout)
                 .build();
 
         // Controlador de navegação
-        NavController navController = Navigation.findNavController(
+        final NavController[] navController = {Navigation.findNavController(
                 this, R.id.nav_host_fragment_content_uniteca
-        );
+        )};
 
         // Integra o NavigationUI com a Toolbar e o Drawer
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
+        NavigationUI.setupActionBarWithNavController(this, navController[0], appBarConfiguration);
+        NavigationUI.setupWithNavController(navigationView, navController[0]);
 
         // muda o titulo la em cima
-        navController.addOnDestinationChangedListener((controller, destination, arguments) ->
+        navController[0].addOnDestinationChangedListener((controller, destination, arguments) ->
                 setTitle(destination.getLabel())
         );
+        binding.navView.setNavigationItemSelectedListener(item -> {
+            int id = item.getItemId();
+
+            if (id == R.id.nav_sair) {
+                Intent intent = new Intent(UnitecaActivity.this, BibliLogin.class);
+                startActivity(intent);
+                finish(); // fecha a UnitecaActivity
+                return true;
+            }
+
+            // mantém a navegação normal
+            navController[0] = Navigation.findNavController(
+                    this, R.id.nav_host_fragment_content_uniteca
+            );
+
+            boolean handled = NavigationUI.onNavDestinationSelected(item, navController[0]);
+            if (handled) {
+                DrawerLayout drawer = binding.drawerLayout;
+                drawer.closeDrawer(GravityCompat.START);
+            }
+            return handled;
+        });
+
     }
 
     @Override
