@@ -42,11 +42,11 @@
     <group android:id="@+id/group_bottom" android:checkableBehavior="none">
         <item
             android:id="@+id/nav_suporte"
-            android:icon="@drawable/base_de_dados"
+            android:icon="@drawable/suport"
             android:title="Suporte" />
         <item
             android:id="@+id/nav_sair"
-            android:icon="@drawable/base_de_dados"
+            android:icon="@drawable/sair"
             android:title="Sair" />
     </group>
 

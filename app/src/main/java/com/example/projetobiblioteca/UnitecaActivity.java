@@ -68,10 +68,11 @@ public class UnitecaActivity extends AppCompatActivity {
         binding.navView.setNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
 
+            // vai voltar para a parte de login
             if (id == R.id.nav_sair) {
                 Intent intent = new Intent(UnitecaActivity.this, BibliLogin.class);
                 startActivity(intent);
-                finish(); // fecha a UnitecaActivity
+                finish();
                 return true;
             }
 

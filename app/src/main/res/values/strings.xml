@@ -47,4 +47,10 @@
     <string name="acervo_1">Toque em qualquer área da tela para acessar o site do Acervo da Biblioteca.</string>
 
     <string name="banco_dados_1">Toque em qualquer área da tela para acessar o site do Banco de Dados da Biblioteca.</string>
+
+    <string name="falesuporte"><b>Fale com a biblioteca</b></string>
+    <string name="site">🌐 Acesse o site</string>
+    <string name="email">📧 Copiar e-mail</string>
+    <string name="contato">💬 Falar no WhatsApp</string>
+
 </resources>
